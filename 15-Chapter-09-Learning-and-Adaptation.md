@@ -236,7 +236,14 @@ OpenEvolve is an evolutionary coding agent that leverages LLMs (see Fig.3) to it
 
 <mark>OpenEvolve 是一个利用 LLM 进行迭代代码优化的进化编码智能体（见图 3）。它协调 LLM 驱动的代码生成、评估和选择流程，持续改进适用于各种任务的程序。OpenEvolve 的一个关键特点是能够优化整个代码文件，而不仅限于单个函数。该智能体设计灵活，支持多种编程语言，并与任何 LLM 的 OpenAI 兼容 API 兼容。此外，它集成了多目标优化，支持灵活的提示工程，并能够进行分布式评估以有效处理复杂的编码挑战。</mark>
 
-**[Figure 3: OpenEvolve architecture would be inserted here]**
+![OpenEvolve Architecture](/images/chapter09_fig3.png)
+Fig. 3: The OpenEvolve internal architecture is managed by a controller. This controller orchestrates several key components: the program sampler, Program Database, Evaluator Pool, and LLM Ensembles. Its primary function is to facilitate their learning and adaptation processes to enhance code quality.
+
+<mark>图 3：OpenEvolve 内部架构由控制器管理。该控制器协调多个关键组件：程序采样器、程序数据库、评估池和 LLM 集成。其主要功能是促进这些组件的学习和适应过程，以提升代码质量。</mark>
+
+---
+
+## Example: Using OpenEvolve | <mark>示例：使用 OpenEvolve</mark>
 
 This code snippet uses the OpenEvolve library to perform evolutionary optimization on a program. It initializes the OpenEvolve system with paths to an initial program, an evaluation file, and a configuration file. The `evolve.run(iterations=1000)` line starts the evolutionary process, running for 1000 iterations to find an improved version of the program. Finally, it prints the metrics of the best program found during the evolution, formatted to four decimal places.
 
@@ -282,7 +289,10 @@ for name, value in best_program.metrics.items():
 
 ## Visual Summary | <mark>可视化总结</mark>
 
-**[Visual summary diagram would be inserted here]**
+![Learning and Adapting Pattern](/images/chapter09_fig4.png)
+Fig.4: Learning and adapting pattern
+
+<mark>图 4：学习和适应模式</mark>
 
 ---
 
